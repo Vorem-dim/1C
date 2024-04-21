@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Заказ" id="7">
+			<DataPath>Объект.Заказ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗаказКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Исполнитель" id="10">
+			<DataPath>Объект.Исполнитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИсполнительКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Категория" id="13">
+			<DataPath>Объект.Категория</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КатегорияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КатегорияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Заказчик" id="16">
+			<DataPath>Объект.Заказчик</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗаказчикКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="ПереченьВыполненныхРабот" id="19">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПереченьВыполненныхРабот</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПереченьВыполненныхРаботКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="ПереченьВыполненныхРаботКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="ПереченьВыполненныхРаботРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ПереченьВыполненныхРаботСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>ПереченьВыполненныхРабот</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьВыполненныхРаботСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ПереченьВыполненныхРаботСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПереченьВыполненныхРаботСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>ПереченьВыполненныхРабот</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьВыполненныхРаботСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ПереченьВыполненныхРаботСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПереченьВыполненныхРаботУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>ПереченьВыполненныхРабот</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьВыполненныхРаботУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ПереченьВыполненныхРаботУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПереченьВыполненныхРаботНомерСтроки" id="32">
+					<DataPath>Объект.ПереченьВыполненныхРабот.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьВыполненныхРаботНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПереченьВыполненныхРаботНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="ПереченьВыполненныхРаботНаименованиеВыполненныхРабот" id="35">
+					<DataPath>Объект.ПереченьВыполненныхРабот.НаименованиеВыполненныхРабот</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьВыполненныхРаботНаименованиеВыполненныхРаботКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПереченьВыполненныхРаботНаименованиеВыполненныхРаботРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ПереченьВыполненныхРаботКоличество" id="38">
+					<DataPath>Объект.ПереченьВыполненныхРабот.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьВыполненныхРаботКоличествоКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПереченьВыполненныхРаботКоличествоРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ПереченьВыполненныхРаботЕдиницы" id="41">
+					<DataPath>Объект.ПереченьВыполненныхРабот.Единицы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьВыполненныхРаботЕдиницыКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПереченьВыполненныхРаботЕдиницыРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ПереченьВыполненныхРаботЦена" id="44">
+					<DataPath>Объект.ПереченьВыполненныхРабот.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьВыполненныхРаботЦенаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПереченьВыполненныхРаботЦенаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ПереченьВыполненныхРаботСуммаСНДС" id="47">
+					<DataPath>Объект.ПереченьВыполненныхРабот.ИтоговаяСтоимость</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьВыполненныхРаботСуммаСНДСКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПереченьВыполненныхРаботСуммаСНДСРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АктВыполненныхРабот</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

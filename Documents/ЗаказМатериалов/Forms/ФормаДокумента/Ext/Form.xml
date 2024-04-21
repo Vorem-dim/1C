@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Заказ" id="7">
+			<DataPath>Объект.Заказ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗаказКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Категория" id="10">
+			<DataPath>Объект.Категория</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КатегорияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КатегорияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="ПереченьТребуемыхМатериалов" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПереченьТребуемыхМатериалов</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПереченьТребуемыхМатериаловКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="ПереченьТребуемыхМатериаловКоманднаяПанель" id="15">
+				<ChildItems>
+					<Button name="Обновить" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="48"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПереченьТребуемыхМатериаловРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="ПереченьТребуемыхМатериаловСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>ПереченьТребуемыхМатериалов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьТребуемыхМатериаловСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ПереченьТребуемыхМатериаловСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПереченьТребуемыхМатериаловСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>ПереченьТребуемыхМатериалов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьТребуемыхМатериаловСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ПереченьТребуемыхМатериаловСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПереченьТребуемыхМатериаловУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>ПереченьТребуемыхМатериалов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьТребуемыхМатериаловУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ПереченьТребуемыхМатериаловУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПереченьТребуемыхМатериаловНомерСтроки" id="26">
+					<DataPath>Объект.ПереченьТребуемыхМатериалов.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьТребуемыхМатериаловНомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПереченьТребуемыхМатериаловНомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<InputField name="ПереченьТребуемыхМатериаловНаименованиеРаботы" id="29">
+					<DataPath>Объект.ПереченьТребуемыхМатериалов.НаименованиеРаботы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьТребуемыхМатериаловНаименованиеРаботыКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПереченьТребуемыхМатериаловНаименованиеРаботыРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ПереченьТребуемыхМатериаловМатериал" id="32">
+					<DataPath>Объект.ПереченьТребуемыхМатериалов.Материал</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьТребуемыхМатериаловМатериалКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПереченьТребуемыхМатериаловМатериалРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ПереченьТребуемыхМатериаловМатериалПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПереченьТребуемыхМатериаловКоличество" id="35">
+					<DataPath>Объект.ПереченьТребуемыхМатериалов.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьТребуемыхМатериаловКоличествоКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПереченьТребуемыхМатериаловКоличествоРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ПереченьТребуемыхМатериаловКоличествоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПереченьТребуемыхМатериаловЕдиницы" id="38">
+					<DataPath>Объект.ПереченьТребуемыхМатериалов.Единицы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьТребуемыхМатериаловЕдиницыКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПереченьТребуемыхМатериаловЕдиницыРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ПереченьТребуемыхМатериаловЦена" id="41">
+					<DataPath>Объект.ПереченьТребуемыхМатериалов.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьТребуемыхМатериаловЦенаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПереченьТребуемыхМатериаловЦенаРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ПереченьТребуемыхМатериаловСтоимость" id="44">
+					<DataPath>Объект.ПереченьТребуемыхМатериалов.Стоимость</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьТребуемыхМатериаловСтоимостьКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПереченьТребуемыхМатериаловСтоимостьРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЗаказМатериалов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
+</Form>
